@@ -24,3 +24,5 @@ print('Distance of final route ' + str(graph.TotalDist(best_solution['route'])))
 # Plotting solution:
 plot = Plot(graph)
 plot.PlotSolution(best_solution['route'])
+
+#test
