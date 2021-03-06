@@ -2,9 +2,9 @@ from Basic.Graph import Graph
 from Local_Search.ConstructiveHeuristics import ConstructiveHeuristics
 from Local_Search.ImprovementHeuristics import ImprovementHeuristics
 from Plots.Plot import Plot
-
-#Numbers of customers
-customers = 20
+import pandas as pd
+#Data with customers
+customers = pd.read_csv("Files/customers.csv")
 
 #Creating objects: Graph, ConstructiveHeuristics, ImprovementHeuristics:
 graph = Graph(customers)

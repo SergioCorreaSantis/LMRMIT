@@ -3,12 +3,12 @@ class Node(object):
     """
     :param: number of node.
     """
-    def __init__(self,node):
+    def __init__(self,node,clients):
         # Atributes:
         self.node = node
-        self.x    = round(np.random.random(),4)*100
-        self.y    = round(np.random.random(),4)*100
-        self.demand = np.random.randint(10,100)
+        self.x    = clients[0]
+        self.y    = clients[1]
+        self.demand = clients[2]
     # Methods:
     def GetNode(self):
         """

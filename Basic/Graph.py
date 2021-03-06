@@ -9,8 +9,8 @@ class Graph(object):
         """
         #Create node dictionary:
         self.node_dict=dict()
-        for n in range(customers):
-            node= Node(n)
+        for n in range(len(customers)):
+            node= Node(n,customers.iloc[n])
             aux={'node':node,'x':node.GetX(),'y':node.GetY(),'demand':node.GetDemand()}
             self.node_dict[n]=aux
 
