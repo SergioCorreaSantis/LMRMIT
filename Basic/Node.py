@@ -16,14 +16,14 @@ class Node(object):
         """
         return self.node
 
-    def GetX(self):
+    def GetLat(self):
         """
 
         :return: Coordenate X of the node
         """
         return self.x
 
-    def GetY(self):
+    def GetLon(self):
         """
 
         :return: Coordenate Y of the node
